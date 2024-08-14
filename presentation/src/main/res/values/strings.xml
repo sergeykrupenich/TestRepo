@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="retry">Retry</string>
+
+    <string name="common_error_message">Something went wrong, please try again later</string>
+    <string name="error_content_description">Error Image</string>
+
+    <string name="empty_state_title">There is no any repositories</string>
+    <string name="empty_content_description">"Empty Image"</string>
+</resources>
