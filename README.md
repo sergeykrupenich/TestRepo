@@ -51,9 +51,10 @@ The project is structured as a multi-module Android project with the following m
 
 ### Clone the Repository
 
-```bash```
+```bash
 git clone https://github.com/sergeykrupenich/TestRepo.git
 cd TestRepo
+```
 
 ## Testing
 
