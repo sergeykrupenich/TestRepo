@@ -17,7 +17,7 @@ import com.siarheikrupenich.testrepo.presentation.ReposScreenViewModel.*
 import com.siarheikrupenich.testrepo.presentation.data.RepoState
 import com.siarheikrupenich.testrepo.presentation.ui.LoadingState
 import com.siarheikrupenich.testrepo.presentation.ui.RepoEmptyState
-import com.siarheikrupenich.testrepo.presentation.ui.RepositoryViewHolder
+import com.siarheikrupenich.testrepo.presentation.ui.RepoItem
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -35,7 +35,7 @@ class ReposScreenFragment : Fragment() {
     }
 
     private fun onRefresh() {
-        viewModel.input.refresh(true)
+        viewModel.input.loadRepos(true)
     }
 
     @Composable
@@ -49,7 +49,7 @@ class ReposScreenFragment : Fragment() {
         when (repoState) {
             is RepoState.Success -> LazyColumn(modifier = Modifier.fillMaxSize()) {
                 items(repoState.repos.count()) { repoIndex ->
-                    RepositoryViewHolder(repoState.repos[repoIndex])
+                    RepoItem(repoState.repos[repoIndex])
                 }
             }
             RepoState.Empty -> RepoEmptyState(

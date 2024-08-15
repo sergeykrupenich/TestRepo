@@ -1,8 +1,8 @@
 package com.siarheikrupenich.testrepo.presentation
 
-import com.siarheikrupenich.testrepo.presentation.base.BaseViewModel
 import com.siarheikrupenich.testrepo.presentation.data.RepoState
 import com.siarheikrupenich.testrepo.presentation.data.usecase.GetUiReposUseCase
+import com.siarheikrupenich.testrepo.ui.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -12,7 +12,7 @@ import javax.inject.Inject
 internal interface ReposScreenViewModel {
 
     interface Input {
-        fun refresh(isRefreshing: Boolean = false)
+        fun loadRepos(isRefreshing: Boolean = false)
     }
 
     interface Output {
@@ -31,10 +31,10 @@ internal interface ReposScreenViewModel {
         override val repoState: StateFlow<RepoState> = _repoState.asStateFlow()
 
         init {
-            refresh(true)
+            loadRepos(true)
         }
 
-        override fun refresh(isRefreshing: Boolean) {
+        override fun loadRepos(isRefreshing: Boolean) {
             updateRepoState(isRefreshing)
         }
 

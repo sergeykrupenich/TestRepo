@@ -11,6 +11,19 @@ android {
         minSdk = libs.versions.minSdk.get().toInt()
     }
 
+    packaging {
+        resources {
+            excludes += setOf(
+                "META-INF/LICENSE.md",
+                "META-INF/LICENSE.txt",
+                "META-INF/LICENSE-notice.md",
+                "META-INF/LICENSE-notice.txt",
+                "META-INF/NOTICE.md",
+                "META-INF/NOTICE.txt",
+            )
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_19
         targetCompatibility = JavaVersion.VERSION_19

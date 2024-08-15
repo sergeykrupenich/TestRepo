@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.siarheikrupenich.testrepo.data"
+    namespace = "com.siarheikrupenich.testrepo.core.ui"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -22,6 +22,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_19
         targetCompatibility = JavaVersion.VERSION_19
@@ -29,29 +30,22 @@ android {
 }
 
 dependencies {
-
-    // Modules
-    implementation(project(Modules.core_network))
-    implementation(project(Modules.core_common))
-    implementation(project(Modules.domain_data))
-    implementation(project(Modules.data_entity))
-
-    // Android
+    // Libs
+    implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.gson)
-    implementation(libs.retrofit)
+    implementation(libs.fragmentKtx)
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.material)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
 
     // DI
     implementation(libs.hilt)
     kapt(libs.hilt.kapt)
-
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
 }
 
 kapt {
     correctErrorTypes = true
 }
+

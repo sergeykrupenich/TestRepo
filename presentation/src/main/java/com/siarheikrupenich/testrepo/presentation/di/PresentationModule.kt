@@ -4,9 +4,7 @@ import com.siarheikrupenich.domain.usecase.GetReposUseCase
 import com.siarheikrupenich.testrepo.presentation.data.mapper.RepoUiModelMapper
 import com.siarheikrupenich.testrepo.presentation.data.mapper.RepoUiModelMapperImpl
 import com.siarheikrupenich.testrepo.presentation.data.usecase.GetUiReposUseCase
-import com.siarheikrupenich.testrepo.presentation.data.usecase.MapRepoUiModelUseCase
-import com.siarheikrupenich.testrepo.presentation.data.usecase.implementation.GetUiReposUseCaseImpl
-import com.siarheikrupenich.testrepo.presentation.data.usecase.implementation.MapRepoUiModelUseCaseImpl
+import com.siarheikrupenich.testrepo.presentation.data.usecase.GetUiReposUseCaseImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -21,13 +19,8 @@ internal class PresentationModule {
         RepoUiModelMapperImpl()
 
     @Provides
-    fun provideMapRepoUiModelUseCase(
-        mapper: RepoUiModelMapper,
-    ): MapRepoUiModelUseCase = MapRepoUiModelUseCaseImpl(mapper)
-
-    @Provides
     fun provideGetUiReposUseCase(
         getReposUseCase: GetReposUseCase,
-        mapRepoUseCase: MapRepoUiModelUseCase
-    ): GetUiReposUseCase = GetUiReposUseCaseImpl(getReposUseCase, mapRepoUseCase)
+        mapper: RepoUiModelMapper
+    ): GetUiReposUseCase = GetUiReposUseCaseImpl(getReposUseCase, mapper)
 }

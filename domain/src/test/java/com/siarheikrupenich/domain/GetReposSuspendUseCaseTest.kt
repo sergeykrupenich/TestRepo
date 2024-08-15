@@ -1,12 +1,12 @@
 package com.siarheikrupenich.domain
 
-import com.siarheikrupenich.data.model.RepoApiEntity
 import com.siarheikrupenich.testrepo.core.tests.BaseTest
 import com.siarheikrupenich.domain.mapper.RepoEntityMapperImpl
 import com.siarheikrupenich.domain.model.RepoEntity
-import com.siarheikrupenich.domain.repository.ReposRepository
+import com.siarheikrupenich.testrepo.repository.ReposRepository
 import com.siarheikrupenich.domain.usecase.GetReposUseCase
 import com.siarheikrupenich.domain.usecase.GetReposUseCaseImpl
+import com.siarheikrupenich.testrepo.entity.RepoApiEntity
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk

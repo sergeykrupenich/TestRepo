@@ -48,7 +48,7 @@ class RepositoriesScreenViewModelTest : BaseTest() {
             val receivedState = awaitItem()
             Assert.assertEquals(testResult, receivedState)
 
-            testViewModel.input.refresh(true)
+            testViewModel.input.loadRepos(true)
             val refreshedLoadingState = awaitItem()
 
             advanceUntilIdle()

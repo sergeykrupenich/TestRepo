@@ -2,7 +2,7 @@ package com.siarheikrupenich.domain.usecase
 
 import com.siarheikrupenich.domain.model.RepoEntity
 import com.siarheikrupenich.domain.mapper.RepoEntityMapper
-import com.siarheikrupenich.domain.repository.ReposRepository
+import com.siarheikrupenich.testrepo.repository.ReposRepository
 
 internal class GetReposUseCaseImpl(
     private val mapper: RepoEntityMapper,

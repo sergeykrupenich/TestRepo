@@ -26,9 +26,12 @@ rootProject.name = "TestRepo"
 
 include(":app")
 include(":data")
+include(":data:entity")
 include(":domain")
+include(":domain:data")
 include(":presentation")
 include(":core")
 include(":core:common")
 include(":core:network")
 include(":core:tests")
+include(":core:ui")

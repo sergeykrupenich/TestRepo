@@ -8,6 +8,7 @@ gradle/daemon
 gradle/kotlin-profile
 gradle/native
 gradle/wrapper/dists
+gradle/jdks
 /local.properties
 /.idea/caches
 /.idea/libraries
@@ -21,3 +22,4 @@ gradle/wrapper/dists
 .externalNativeBuild
 .cxx
 local.properties
+buildSrc/build
