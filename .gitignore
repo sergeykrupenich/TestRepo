@@ -1,7 +1,13 @@
 *.iml
 .gradle
-gradle
 .idea
+gradle/.tmp
+gradle/android
+gradle/caches
+gradle/daemon
+gradle/kotlin-profile
+gradle/native
+gradle/wrapper/dists
 /local.properties
 /.idea/caches
 /.idea/libraries

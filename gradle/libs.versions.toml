@@ -1,0 +1,79 @@
+[versions]
+# Global
+accompanistSwiperefresh = "0.30.0"
+compileSdk = "34"
+coreTesting = "2.2.0"
+minSdk = "24"
+targetSdk = "34"
+versionCode = "1"
+versionName = "1.0.0"
+kotlinCompilerExtensionVersion = "1.5.15"
+
+# Library Versions
+activityCompose = "1.9.1"
+agp = "8.5.2"
+kotlin = "1.9.25"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+composeJunitVersion = "1.6.8"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+lifecycleRuntimeKtx = "2.8.4"
+material = "1.12.0"
+materialVersion = "1.6.8"
+ui = "1.6.8"
+fragmentKtx = "1.8.2"
+coroutines = "1.7.2"
+hilt = "2.51"
+retrofit = "2.11.0"
+gson = "2.10.1"
+okHttp = "4.12.0"
+converter_gson = "2.11.0"
+logging_interceptor = "4.10.0"
+navigation = "2.7.7"
+timber = "5.0.1"
+shimmer = "0.5.0"
+mockk = "1.13.4"
+turbine = "0.12.1"
+
+[libraries]
+accompanist-swiperefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanistSwiperefresh" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+androidx-activity-compose-navigation = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
+androidx-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "coreTesting" }
+androidx-navigation-testing = { module = "androidx.navigation:navigation-testing", version.ref = "navigation" }
+androidx-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "composeJunitVersion" }
+androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "ui" }
+navigation = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-material = { module = "androidx.compose.material:material", version.ref = "materialVersion" }
+androidx-ui = { module = "androidx.compose.ui:ui", version.ref = "ui" }
+androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "ui" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+fragmentKtx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtx" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+okHttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okHttp" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-converterGson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "converter_gson" }
+loggingInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "logging_interceptor" }
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
+shimmer = { group = "com.facebook.shimmer", name = "shimmer", version.ref = "shimmer" }
+hilt-kapt = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+test-mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+test-turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+test-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }

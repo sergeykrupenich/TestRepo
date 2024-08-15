@@ -74,7 +74,7 @@ dependencies {
     testImplementation(libs.androidx.core.ktx)
     testImplementation(libs.test.turbine)
     testImplementation(libs.test.coroutines.test)
-    testImplementation("androidx.arch.core:core-testing:2.2.0")
+    testImplementation(libs.androidx.core.testing)
 
     androidTestImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
