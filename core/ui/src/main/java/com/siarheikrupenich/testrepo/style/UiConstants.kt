@@ -1,6 +1,7 @@
-package com.siarheikrupenich.testrepo.presentation.ui.style
+package com.siarheikrupenich.testrepo.style
 
-internal class UiConstants {
+class UiConstants {
+
     companion object {
         const val INDICATOR_ANIMATION_INITIAL = 0.3f
         const val INDICATOR_TARGET = 1f

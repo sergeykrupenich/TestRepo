@@ -2,7 +2,7 @@ package com.siarheikrupenich.testrepo.presentation
 
 import com.siarheikrupenich.testrepo.presentation.data.RepoState
 import com.siarheikrupenich.testrepo.presentation.data.usecase.GetUiReposUseCase
-import com.siarheikrupenich.testrepo.ui.BaseViewModel
+import com.siarheikrupenich.testrepo.viewmodel.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

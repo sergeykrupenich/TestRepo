@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.siarheikrupenich.testrepo.domain.data"
+    namespace = "com.siarheikrupenich.testrepo.domain.repository"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -18,7 +18,6 @@ android {
 }
 
 dependencies {
-    implementation(project(Modules.data_entity))
-
     implementation(libs.androidx.core.ktx)
+    implementation(libs.gson)
 }

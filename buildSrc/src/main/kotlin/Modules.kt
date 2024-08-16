@@ -1,14 +1,11 @@
 object Modules {
     const val app = ":app"
     const val presentation = ":presentation"
-
-    // data
     const val data = ":data"
-    const val data_entity = ":data:entity"
 
     // domain
     const val domain = ":domain"
-    const val domain_data = ":domain:data"
+    const val domain_repository = ":domain:repository"
 
     // core
     const val core = ":core"

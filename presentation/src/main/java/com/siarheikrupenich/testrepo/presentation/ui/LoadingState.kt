@@ -19,13 +19,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.tooling.preview.Preview
-import com.siarheikrupenich.testrepo.presentation.ui.style.Colors
-import com.siarheikrupenich.testrepo.presentation.ui.style.Size
-import com.siarheikrupenich.testrepo.presentation.ui.style.UiConstants.Companion.ANIMATION_DRAW_WIDTH
-import com.siarheikrupenich.testrepo.presentation.ui.style.UiConstants.Companion.ANIMATION_DURATION
-import com.siarheikrupenich.testrepo.presentation.ui.style.UiConstants.Companion.ANIMATION_RADIUS_K
-import com.siarheikrupenich.testrepo.presentation.ui.style.UiConstants.Companion.INDICATOR_ANIMATION_INITIAL
-import com.siarheikrupenich.testrepo.presentation.ui.style.UiConstants.Companion.INDICATOR_TARGET
+import com.siarheikrupenich.testrepo.style.Colors
+import com.siarheikrupenich.testrepo.style.Size
+import com.siarheikrupenich.testrepo.style.UiConstants.Companion.ANIMATION_DRAW_WIDTH
+import com.siarheikrupenich.testrepo.style.UiConstants.Companion.ANIMATION_DURATION
+import com.siarheikrupenich.testrepo.style.UiConstants.Companion.ANIMATION_RADIUS_K
+import com.siarheikrupenich.testrepo.style.UiConstants.Companion.INDICATOR_ANIMATION_INITIAL
+import com.siarheikrupenich.testrepo.style.UiConstants.Companion.INDICATOR_TARGET
 
 @Composable
 internal fun LoadingState(modifier: Modifier = Modifier) {

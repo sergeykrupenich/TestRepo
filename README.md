@@ -39,7 +39,7 @@ The project is structured as a multi-module Android project with the following m
 - **core**: Contains common classes and utilities used across different modules.
 - **data**: Responsible for data management, including API calls (Retrofit) and repository implementations.
 - **domain**: Contains business logic, use cases, and repository interfaces.
-- **di**: Module for dependency injection using Hilt.
+- **presentation**: Manages the user interface layer of the application, including `ViewModel`s and `Composable` views, following the MVVM architecture pattern. This module is responsible for coordinating the display of data to the user and handling user interactions. 
 
 ## Getting Started
 

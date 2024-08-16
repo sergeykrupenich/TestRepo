@@ -22,8 +22,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import com.siarheikrupenich.testrepo.presentation.R
-import com.siarheikrupenich.testrepo.presentation.ui.style.FontSize
-import com.siarheikrupenich.testrepo.presentation.ui.style.Size
+import com.siarheikrupenich.testrepo.style.FontSize
+import com.siarheikrupenich.testrepo.style.Size
 
 @Composable
 internal fun RepoEmptyState(

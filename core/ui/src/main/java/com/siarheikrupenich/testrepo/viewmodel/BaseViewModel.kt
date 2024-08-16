@@ -1,4 +1,4 @@
-package com.siarheikrupenich.testrepo.ui
+package com.siarheikrupenich.testrepo.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

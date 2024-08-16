@@ -33,14 +33,12 @@ dependencies {
     // Modules
     implementation(project(Modules.core_network))
     implementation(project(Modules.core_common))
-    implementation(project(Modules.domain_data))
-    implementation(project(Modules.data_entity))
+    implementation(project(Modules.domain_repository))
 
     // Android
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.core.ktx)
-    implementation(libs.gson)
     implementation(libs.retrofit)
 
     // DI

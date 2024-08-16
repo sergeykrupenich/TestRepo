@@ -1,8 +1,8 @@
-package com.siarheikrupenich.testrepo.presentation.ui.style
+package com.siarheikrupenich.testrepo.style
 
 import androidx.compose.ui.unit.dp
 
-internal object Size {
+object Size {
     val zero = 0.dp
 
     val spacing4 = 4.dp

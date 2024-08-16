@@ -63,6 +63,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose.navigation)
     implementation(libs.accompanist.swiperefresh)
+    implementation(libs.androidx.hilt.navigation.compose)
 
     // DI
     implementation(libs.hilt)

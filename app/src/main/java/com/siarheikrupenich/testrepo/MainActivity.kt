@@ -3,8 +3,8 @@ package com.siarheikrupenich.testrepo
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import com.siarheikrupenich.testrepo.ui.ReposApp
-import com.siarheikrupenich.testrepo.ui.ReposGraph
+import com.siarheikrupenich.testrepo.viewmodel.ReposApp
+import com.siarheikrupenich.testrepo.viewmodel.ReposGraph
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

@@ -14,8 +14,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.siarheikrupenich.testrepo.presentation.data.RepoUi
-import com.siarheikrupenich.testrepo.presentation.ui.style.Size
-import com.siarheikrupenich.testrepo.presentation.ui.style.UiConstants.Companion.COLOR_ALPHA_20
+import com.siarheikrupenich.testrepo.style.Size
+
+import com.siarheikrupenich.testrepo.style.UiConstants.Companion.COLOR_ALPHA_20
 
 @Composable
 internal fun RepoItem(repoUi: RepoUi) {
