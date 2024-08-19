@@ -46,9 +46,10 @@ The project is structured as a multi-module Android project with the following m
 
 ### Prerequisites
 
-- Android Studio Arctic Fox or later
+- Android Studio Koala | 2024.1.1 Patch 1 or later
 - Gradle 8.9+
-- Kotlin 1.9+
+- Kotlin 1.9.25+
+- JDK Oracle OpenJDK 19.0.1
 
 ### Clone the Repository
 
