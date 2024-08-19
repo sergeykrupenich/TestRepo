@@ -8,6 +8,7 @@ This project is an Android application that displays a list of GitHub repositori
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
 - [Testing](#testing)
+- [Future Improvements](#future-improvements)
 
 ## Features
 
@@ -70,3 +71,17 @@ This project includes both unit and instrumental testing to ensure the reliabili
   - The ViewModel, which handles the UI logic and state management, is tested to ensure it behaves as expected in different scenarios.
 - **Instrumental Testing:**
   - UI components, specifically the EmptyState Compose view, are covered by instrumental UI tests. These tests verify that the UI elements render correctly and interact as intended.
+
+## Future Improvements
+
+### 1. Architecture Enhancements
+
+In the future, the project architecture could be evolved into a feature module-based structure. This approach involves creating separate modules for each new feature while adhering to Clean Architecture principles. By isolating features into their own modules, we ensure better separation of concerns, improved scalability, and easier maintenance. Each feature module would encapsulate its own UI, business logic, and data layers, thus promoting reusability and reducing dependencies between different parts of the application.
+
+### 2. Possible Features
+
+To enhance the functionality and user experience of the application, the following features could be considered for future implementation:
+
+- **Repository Details View**: Allow users to tap on a repository in the list and view detailed information about the repository, including description, stars, forks, and last updated date.
+- **Search Functionality**: Implement a search bar that allows users to search for specific repositories by name or keywords, making it easier to find a particular repository in large lists.
+- **Offline Support**: Introduce caching mechanisms to enable the application to display repositories even when the device is offline. This would involve saving the latest fetched data locally and updating it when the app regains internet connectivity.
