@@ -45,7 +45,6 @@ dependencies {
     kapt(libs.hilt.kapt)
 
     // Test
-    testImplementation(project(Modules.core_tests))
     testImplementation(libs.junit)
     testImplementation(libs.test.mockk)
 }

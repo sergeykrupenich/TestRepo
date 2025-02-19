@@ -1,4 +1,4 @@
-package com.siarheikrupenich.testrepo.viewmodel
+package com.siarheikrupenich.testrepo.app
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme

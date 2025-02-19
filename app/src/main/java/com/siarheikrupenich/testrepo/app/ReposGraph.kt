@@ -1,4 +1,4 @@
-package com.siarheikrupenich.testrepo.viewmodel
+package com.siarheikrupenich.testrepo.app
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
@@ -6,7 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.siarheikrupenich.testrepo.presentation.ReposScreen
-import com.siarheikrupenich.testrepo.viewmodel.TestRepoGraphDestinations.HOME
+import com.siarheikrupenich.testrepo.app.TestRepoGraphDestinations.HOME
 
 @Composable
 fun ReposGraph(navController: NavHostController = rememberNavController()) {

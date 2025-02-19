@@ -41,7 +41,6 @@ dependencies {
     // Modules
     implementation(project(Modules.domain))
     implementation(project(Modules.core_common))
-    implementation(project(Modules.core_ui))
 
     // Libs
     implementation(libs.androidx.core.ktx)
@@ -70,7 +69,6 @@ dependencies {
     kapt(libs.hilt.kapt)
 
     // Test
-    testImplementation(project(Modules.core_tests))
     testImplementation(libs.junit)
     testImplementation(libs.test.mockk)
     testImplementation(libs.androidx.core.ktx)
